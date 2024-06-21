@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS Kernel
+ * PROJECT:         CesarOS Kernel
  * LICENSE:         GPL - See COPYING in the top level directory
  * FILE:            ntoskrnl/kd64/kdinit.c
  * PURPOSE:         KD64 Initialization Code
@@ -72,7 +72,7 @@ VOID
 KdpPrintBanner(IN SIZE_T MemSizeMBs)
 {
     DPRINT1("-----------------------------------------------------\n");
-    DPRINT1("ReactOS " KERNEL_VERSION_STR " (Build " KERNEL_VERSION_BUILD_STR ") (Commit " KERNEL_VERSION_COMMIT_HASH ")\n");
+    DPRINT1("CesarOS Pre-Alpha " KERNEL_VERSION_STR " (Build " KERNEL_VERSION_BUILD_STR ") (Commit " KERNEL_VERSION_COMMIT_HASH ") (Pre-Alpha build)\n");
     DPRINT1("%u System Processor [%u MB Memory]\n", KeNumberProcessors, MemSizeMBs);
 
     if (KeLoaderBlock)
