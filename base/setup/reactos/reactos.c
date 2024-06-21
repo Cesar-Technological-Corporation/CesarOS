@@ -1,6 +1,6 @@
 /*
- *  ReactOS applications
- *  Copyright (C) 2004-2008 ReactOS Team
+ *  CesarOS applications
+ *  Copyright (C) 2004-2008 ReactOS Team / (C) 2024 Cesar Technological Corporation
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@
  */
 /*
  * COPYRIGHT:   See COPYING in the top level directory
- * PROJECT:     ReactOS GUI first stage setup application
+ * PROJECT:     CesarOS GUI first stage setup application
  * FILE:        base/setup/reactos/reactos.c
  * PROGRAMMERS: Matthias Kupfer
  *              Dmitry Chapyshev (dmitry@reactos.org)
@@ -872,7 +872,7 @@ SummaryDlgProc(
                     else
                     {
                         StringCchCopyW(CurrentItemText, ARRAYSIZE(CurrentItemText),
-                                       L"New ReactOS installation");
+                                       L"New CesarOS installation");
                     }
                     SetDlgItemTextW(hwndDlg, IDC_INSTALLTYPE, CurrentItemText);
 
@@ -1422,7 +1422,7 @@ BOOL LoadSetupData(
     pSetupData->USetupData.LanguageList = CreateLanguageList(pSetupData->USetupData.SetupInf, pSetupData->DefaultLanguage);
 
     /* If not unattended, overwrite language and locale with
-     * the current ones of the running ReactOS instance */
+     * the current ones of the running CesarOS instance */
     if (!IsUnattendedSetup)
     {
         LCID LocaleID = GetUserDefaultLCID();
@@ -1446,7 +1446,7 @@ BOOL LoadSetupData(
                                                                  pSetupData->DefaultKBLayout);
 
     /* If not unattended, overwrite keyboard layout with
-     * the current one of the running ReactOS instance */
+     * the current one of the running CesarOS instance */
     if (!IsUnattendedSetup)
     {
         C_ASSERT(_countof(pSetupData->DefaultKBLayout) >= KL_NAMELENGTH);
