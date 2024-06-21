@@ -69,15 +69,32 @@ jobs:
       run: echo 'cmake -S ${{github.workspace}}/src -B ${{github.workspace}}/build -G Ninja -DCMAKE_TOOLCHAIN_FILE:FILEPATH=toolchain-${{matrix.compiler}}.cmake -DARCH:STRING=${{matrix.arch}} -DCMAKE_BUILD_TYPE=${{matrix.config}} -DDLL_EXPORT_VERSION=${{matrix.dllver}} -DENABLE_CCACHE=1 -DENABLE_ROSTESTS=1 -DENABLE_ROSAPPS=1 ${{env.D_CLANG_VERSION}}' | ${{github.workspace}}/RosBE-CI/RosBE.sh . 0 ${{matrix.arch}}
     - name: Build
       run: echo 'cmake --build ${{github.workspace}}/build -- -k0' | ${{github.workspace}}/RosBE-CI/RosBE.sh . 0 ${{matrix.arch}}
-    - name: Generate ISOs
+    - name: Generate final build
       run: echo 'cmake --build ${{github.workspace}}/build --target bootcd --target livecd' | ${{github.workspace}}/RosBE-CI/RosBE.sh . 0 ${{matrix.arch}}
     - name: Print ccache statistics
       run: ccache -s
-    - name: Upload ISOs
+    - name: Upload final build
       uses: actions/upload-artifact@v4
       with:
         name: reactos-${{matrix.compiler}}-${{matrix.arch}}-${{matrix.config}}-${{matrix.dllver}}-${{github.sha}}
         path: |
+          build/base
+          build/dll/cpl
+          build/modules/rosapps
+          build/subsystems
+          !**/CMakeFiles
+          !**/cmake_install.cmake
+          !**/*.asm
+          !**/*.bin
+          !**/*.c
+          !**/*.def
+          !**/*.exp
+          !**/*.h
+          !**/*.lib
+          !**/*.mc
+          !**/*.obj
+          !**/*.rc
+          !**/*.tlb
           build/bootcd.iso
           build/livecd.iso
 
@@ -126,13 +143,30 @@ jobs:
       run: cmake -S src -B build -G Ninja -DCMAKE_TOOLCHAIN_FILE:FILEPATH=toolchain-msvc.cmake -DARCH:STRING=${{matrix.arch}} -DCMAKE_BUILD_TYPE=${{matrix.config}} -DDLL_EXPORT_VERSION=${{matrix.dllver}} -DENABLE_ROSTESTS=1 -DENABLE_ROSAPPS=1
     - name: Build
       run: cmake --build build -- -k0
-    - name: Generate ISOs
+    - name: Generate final build
       run: cmake --build build --target bootcd --target livecd
-    - name: Upload ISOs
+    - name: Upload final build
       uses: actions/upload-artifact@v4
       with:
         name: reactos-msvc${{matrix.toolset}}-${{matrix.arch}}-${{matrix.config}}-${{matrix.dllver}}-${{github.sha}}
         path: |
+          build/base
+          build/dll/cpl
+          build/modules/rosapps
+          build/subsystems
+          !**/CMakeFiles
+          !**/cmake_install.cmake
+          !**/*.asm
+          !**/*.bin
+          !**/*.c
+          !**/*.def
+          !**/*.exp
+          !**/*.h
+          !**/*.lib
+          !**/*.mc
+          !**/*.obj
+          !**/*.rc
+          !**/*.tlb
           build/bootcd.iso
           build/livecd.iso
     - name: Upload debug symbols
@@ -266,13 +300,30 @@ jobs:
       run: cmake -S src -B build -G Ninja -DCMAKE_TOOLCHAIN_FILE:FILEPATH=toolchain-msvc.cmake -DARCH:STRING=${{matrix.arch}} -DCMAKE_BUILD_TYPE=${{matrix.config}} -DENABLE_ROSTESTS=1 -DENABLE_ROSAPPS=1 -DUSE_CLANG_CL:BOOL=TRUE
     - name: Build
       run: cmake --build build -- -k0
-    - name: Generate ISOs
+    - name: Generate final build  
       run: cmake --build build --target bootcd --target livecd
-    - name: Upload ISOs
+    - name: Upload final build
       uses: actions/upload-artifact@v4
       with:
         name: reactos-clang-cl-${{matrix.arch}}-${{matrix.config}}-${{github.sha}}
         path: |
+          build/base
+          build/dll/cpl
+          build/modules/rosapps
+          build/subsystems
+          !**/CMakeFiles
+          !**/cmake_install.cmake
+          !**/*.asm
+          !**/*.bin
+          !**/*.c
+          !**/*.def
+          !**/*.exp
+          !**/*.h
+          !**/*.lib
+          !**/*.mc
+          !**/*.obj
+          !**/*.rc
+          !**/*.tlb
           build/bootcd.iso
           build/livecd.iso
     - name: Upload debug symbols
