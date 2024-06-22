@@ -2,24 +2,24 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="21pt"
    height="233pt"
    viewBox="0 0 26.250001 291.25001"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="1.4-dev (1:1.4.0-dev+202403210151+2fe0648968)"
    sodipodi:docname="start_menu_banner.svg"
    inkscape:export-filename="F:\reactos\Logo.png"
    inkscape:export-xdpi="72"
-   inkscape:export-ydpi="72">
+   inkscape:export-ydpi="72"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs4">
     <linearGradient
@@ -79,7 +79,11 @@
     <filter
        style="color-interpolation-filters:sRGB;"
        inkscape:label="Drop Shadow"
-       id="filter4197">
+       id="filter4197"
+       x="-0.032291297"
+       y="-0.1632645"
+       width="1.0632909"
+       height="1.3945559">
       <feFlood
          flood-opacity="0.68999999999999995"
          flood-color="rgb(0,0,0)"
@@ -116,18 +120,21 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.4967109"
-     inkscape:cx="-163.98482"
-     inkscape:cy="142.13217"
+     inkscape:zoom="2.8991308"
+     inkscape:cx="-21.38572"
+     inkscape:cy="200.92229"
      inkscape:document-units="px"
      inkscape:current-layer="svg2"
      showgrid="false"
      units="pt"
      inkscape:window-width="1397"
      inkscape:window-height="974"
-     inkscape:window-x="346"
-     inkscape:window-y="335"
-     inkscape:window-maximized="0" />
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -158,19 +165,19 @@
      inkscape:export-ydpi="72" />
   <text
      transform="matrix(0,-0.93191339,1.0473001,0,-16.177787,-724.38567)"
-     sodipodi:linespacing="100%"
      id="text4707"
      y="34.69656"
      x="-1058.8489"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.14050674px;line-height:100%;font-family:'AvantGarde Bk BT';-inkscape-font-specification:'AvantGarde Bk BT, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4197)"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'AvantGarde Bk BT';-inkscape-font-specification:'AvantGarde Bk BT, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter4197)"
      xml:space="preserve"><tspan
        y="34.69656"
        x="-1058.8489"
        id="tspan4709"
-       sodipodi:role="line"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.00007629px;line-height:100%;font-family:'AvantGarde Bk BT';-inkscape-font-specification:'AvantGarde Bk BT, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
-         id="tspan4213">ReactOS</tspan><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.50006676px;line-height:100%;font-family:'AvantGarde Bk BT';-inkscape-font-specification:'AvantGarde Bk BT, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+       sodipodi:role="line"
+       style="font-size:18.1405px;line-height:1"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.0001px;line-height:100%;font-family:'AvantGarde Bk BT';-inkscape-font-specification:'AvantGarde Bk BT, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+         id="tspan4213">CesarOS</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5001px;line-height:100%;font-family:'AvantGarde Bk BT';-inkscape-font-specification:'AvantGarde Bk BT, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
          id="tspan4209" /></tspan></text>
   <g
      style="fill:#ffffff;fill-opacity:1"
