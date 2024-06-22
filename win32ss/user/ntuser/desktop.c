@@ -1,6 +1,6 @@
 /*
  *  COPYRIGHT:        See COPYING in the top level directory
- *  PROJECT:          CesarOS Win32k subsystem
+ *  PROJECT:          ReactOS Win32k subsystem
  *  PURPOSE:          Desktops
  *  FILE:             subsystems/win32/win32k/ntuser/desktop.c
  *  PROGRAMMER:       Casper S. Hornstrup (chorns@users.sourceforge.net)
@@ -379,7 +379,7 @@ GetSystemVersionString(OUT PWSTR pwszzVersion,
         /* String for Safe Mode */
         Status = RtlStringCchPrintfW(pwszzVersion,
                                      cchDest,
-                                     L"CesarOS Pre-Alpha Version %S %wZ (NT %u.%u Build %u%s)\n",
+                                     L"ReactOS Version %S %wZ (NT %u.%u Build %u%s)\n",
                                      KERNEL_VERSION_STR,
                                      &BuildLabString,
                                      SharedUserData->NtMajorVersion,
@@ -419,10 +419,9 @@ GetSystemVersionString(OUT PWSTR pwszzVersion,
         /* Multi-string for Normal Mode */
         Status = RtlStringCchPrintfW(pwszzVersion,
                                      cchDest,
-                                     // Some changes here, currently not final
-                                     L"CesarOS Pre-Alpha Version %S\n"
-                                     L"For testing purposes only. Build %wZ\n" // Add the testing purposes only message
-                                     // L"Reporting NT %u.%u (Build %u%s)\n", // Remove this line from displaying
+                                     L"ReactOS Version %S\n"
+                                     L"Build %wZ\n"
+                                     L"Reporting NT %u.%u (Build %u%s)\n",
                                      KERNEL_VERSION_STR,
                                      &BuildLabString,
                                      SharedUserData->NtMajorVersion,
@@ -453,7 +452,7 @@ GetSystemVersionString(OUT PWSTR pwszzVersion,
         /* Fall-back string */
         Status = RtlStringCchPrintfW(pwszzVersion,
                                      cchDest,
-                                     L"CesarOS Version %S %wZ\n",
+                                     L"ReactOS Version %S %wZ\n",
                                      KERNEL_VERSION_STR,
                                      &BuildLabString);
         if (!NT_SUCCESS(Status))
