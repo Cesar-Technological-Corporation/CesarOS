@@ -4,12 +4,12 @@ Signature = "$ReactOS$"
 ; Set UnattendSetupEnabled to yes in order to get unattended setup working
 ; yes - unattend setup enabled
 ; no - unattend setup disabled
-UnattendSetupEnabled = no
+UnattendSetupEnabled = yes
 
 ; Install to \Device\Harddisk0\Partition1\ReactOS
 DestinationDiskNumber = 0
 DestinationPartitionNumber = 1
-InstallationDirectory=ReactOS
+InstallationDirectory=CesarOS
 
 ; MBRInstallType=0  skips MBR installation
 ; MBRInstallType=1  install MBR on floppy
@@ -17,12 +17,12 @@ InstallationDirectory=ReactOS
 MBRInstallType=2
 
 FullName="MyName"
-;OrgName="MyOrg"
+OrgName="MyOrg"
 ComputerName="MYCOMPUTERNAME"
-;AdminPassword="MyPassword"
+AdminPassword="MyPassword"
 
 ; TimeZone is set GMT as default
-TimeZoneIndex=85
+TimeZoneIndex=05
 
 ; enable this setting to disable daylight saving changes
 ; DisableAutoDaylightTimeSet = 1
@@ -56,7 +56,7 @@ LocaleID = 409
 ; set product option
 ; 0: ReactOS Server
 ; 1: ReactOS Workstation
-ProductOption = 0
+ProductOption = 1
 
 ; enable this section to automatically launch programs
 ; after 3rd boot
@@ -64,7 +64,7 @@ ProductOption = 0
 ; [GuiRunOnce]
 ; %SystemRoot%\system32\cmd.exe
 ; Enable the next line (+ the GuiRunOnce section) to enable the lautus theme
-; "rundll32.exe shell32.dll,Control_RunDLL desk.cpl desk,@Appearance /Action:ActivateMSTheme /file:%SYSTEMROOT%\Resources\themes\lautus\lautus.msstyles"
+"rundll32.exe shell32.dll,Control_RunDLL desk.cpl desk,@Appearance /Action:ActivateMSTheme /file:%SYSTEMROOT%\Resources\themes\lautus\lautus.msstyles"
 
 
 ; enable this section to change resolution / bpp
