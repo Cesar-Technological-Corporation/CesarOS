@@ -1,6 +1,6 @@
 
 option(ENABLE_ROSAPPS "Enable building the CesarOS extra applications" ON)
-option(ENABLE_ROSTESTS "Enable building the CesarOS test suite" ON)
+option(ENABLE_ROSTESTS "Enable building the CesarOS test suite" OFF)
 option(ENABLE_WALLPAPERS "Integrate wallpapers into the built ISOs" ON)
 
 if(ENABLE_ROSAPPS)
