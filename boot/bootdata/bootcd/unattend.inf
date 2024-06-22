@@ -30,13 +30,13 @@ TimeZoneIndex=05
 ; enable this setting to format the selected partition
 ; 1 - format enabled
 ; 0 - format disabled
-FormatPartition=1
+FormatPartition=0
 
 ; enable this setting to automatically create a partition
 ; during installation
 ; 1 - enabled
 ; 0 - disabled
-AutoPartition = 1
+AutoPartition = 0
 
 ; choose default file system type
 ; 0 - FAT
