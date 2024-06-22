@@ -379,7 +379,7 @@ GetSystemVersionString(OUT PWSTR pwszzVersion,
         /* String for Safe Mode */
         Status = RtlStringCchPrintfW(pwszzVersion,
                                      cchDest,
-                                     L"ReactOS Version %S %wZ (NT %u.%u Build %u%s)\n",
+                                     L"CesarOS Pre-Alpha Version %S %wZ (NT %u.%u Build %u%s)\n",
                                      KERNEL_VERSION_STR,
                                      &BuildLabString,
                                      SharedUserData->NtMajorVersion,
@@ -417,11 +417,12 @@ GetSystemVersionString(OUT PWSTR pwszzVersion,
     else
     {
         /* Multi-string for Normal Mode */
+        /* Let's put some Windows-like changes here*/
         Status = RtlStringCchPrintfW(pwszzVersion,
                                      cchDest,
-                                     L"ReactOS Version %S\n"
-                                     L"Build %wZ\n"
-                                     L"Reporting NT %u.%u (Build %u%s)\n",
+                                     L"CesarOS Pre-Alpha Version %S\n"
+                                     L"For testing purposes only. Build %wZ\n", // just added a little testing purposes only line here, just like beta/alpha windows usually does
+                                     // L"Reporting NT %u.%u (Build %u%s)\n", // just don't let this line show, at least for now
                                      KERNEL_VERSION_STR,
                                      &BuildLabString,
                                      SharedUserData->NtMajorVersion,
