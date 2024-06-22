@@ -61,7 +61,7 @@ ProductOption = 1
 ; enable this section to automatically launch programs
 ; after 3rd boot
 ;
-; [GuiRunOnce]
+[GuiRunOnce]
 ; %SystemRoot%\system32\cmd.exe
 ; Enable the next line (+ the GuiRunOnce section) to enable the lautus theme
 "rundll32.exe shell32.dll,Control_RunDLL desk.cpl desk,@Appearance /Action:ActivateMSTheme /file:%SYSTEMROOT%\Resources\themes\lautus\lautus.msstyles"
