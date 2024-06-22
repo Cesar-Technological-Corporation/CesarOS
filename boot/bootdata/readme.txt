@@ -1,6 +1,6 @@
 ﻿========================
 CesarOS Version 0.4.x
-Updated October 9, 2021
+Updated June 21st, 2024
 ========================
 
 1. What is CesarOS?
